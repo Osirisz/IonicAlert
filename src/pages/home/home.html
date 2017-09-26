@@ -7,8 +7,14 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <button ion-button block color="default" (click) = "presentAlert()">Basic</button>
+  <button ion-button block color="light" (click) = "presentConfirm()" >Confirm</button>
+  <button ion-button block color="secondary" light (click) = "presentPrompt()" >Login prompt</button>
+  <button ion-button block color="danger" light (click)="doRadio()">Radio Alert</button>
+  <br>
+  <button ion-button block round (click)="showAlert()" color="danger">Show Alert!</button>
+  <button ion-button block round (click)="showConfirm()" color="secondary">Show Confirm!</button>
+  <button ion-button block round (click)="showPrompt()" color="light">Show Prompt!</button>
+  <button ion-button block round (click)="showRadio()" color="dark">Show Radio!</button>
+  <button ion-button block round (click)="showCheckbox()" color="dark">Show Checkbox!</button>
 </ion-content>
